@@ -4,7 +4,7 @@ Control system using external temperature sensor (DB18B20) with a configurable t
 
 Two versions available **basic** without any WiFi connection and one using **MQTT** topics to publish status. 
 
-<img src="https://github.com/MagnusPer/HeatCable/blob/main/images/LCDdisplay.JPG" width="400">
+<img src="https://github.com/MagnusPer/HeatCable/blob/main/images/LCDdisplay.jpg" width="400">
 
 
 ## Installation
