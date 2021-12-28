@@ -1,8 +1,8 @@
 # Cable Heater
 
-Heat Cable control system using external temperature sensor (DB18B20) and a predefined temperature treshold (SetTemp) when relay to heatcable shall be activated. LCD display (Omilex sheild-LCD16x2) to visualize external(OutTemp) and treshold(SetTemp) temperature with relay status.    
+Heat Cable control system using external temperature sensor (DB18B20) and a confirable temperature treshold (SetTemp) when relay to heatcable shall be activated. LCD display (Omilex sheild-LCD16x2) to visualize external(OutTemp) and treshold(SetTemp) temperature with relay status.    
 
-Two version available **basic** and without any WiFi connection and one using **MQTT** topics for status 
+Two versions available **basic** without any WiFi connection and one using **MQTT** topics to publish status. 
 
 
 ## Installation
@@ -10,7 +10,7 @@ Needed Arduino Libraries to be included in [IDE](https://www.arduino.cc/en/Main/
 
 | Library                            | Link to GitHub                                      |  Basic  |  MQTT  | 
 | ---------------------------------- | --------------------------------------------------- |---------|--------|
-| [PubSubClient]( https://github.com/knolleary/pubsubclient )                       |  https://github.com/knolleary/pubsubclient          |         |   X    |     
+| PubSubClient                       |  https://github.com/knolleary/pubsubclient          |         |   X    |     
 | OneWire                            |                                                     |   X     |   X    |
 | Dallas Temperature                 |                                                     |   X     |   X    |   
 | Wire                               |                                                     |   X     |   X    |  
@@ -23,13 +23,11 @@ MQTT Topics to be published.
 
 | Topic                              | Description                                         |
 | ---------------------------------- | --------------------------------------------------- |
-| WeatherStation/WindSpeed           |  set topic - Gust wind speed (m/s) during `ReportTimerShort`      |
-| WeatherStation/WindSpeedAverage    |  set topic - Average wind speed (m/s) during `ReportTimerLong`   |
-| WeatherStation/MinWindSpeed        |  set topic - Min gust wind speed (m/s) during `ReportTimerShort`  |
-| WeatherStation/MaxWindSpeed        |  set topic - Max gust wind speed (m/s) during `ReportTimerShort`  |
-| WeatherStation/WindVane            |  set topic - Wind direction in degrees 0-360                   |
-| WeatherStation/WindVaneCompass     |  set topic - Wind compass direction e.g. N, NE                 |
-| WeatherStation/Temperature         |  set topic - Temperature in degrees                             |
+| HeatCable/Status                   |  set topic - Status "online/offline"                |
+| HeatCable/RelayStatus              |  set topic - Relay status "activated/deactivated"   |
+| HeatCable/OutTemp                  |  set topic - Outdoor temperature                    |
+| HeatCable/SetTemp                  |  set topic - Configured temperature                 |
+
 
 ## Wiring
 <img src="https://github.com/MagnusPer/WeatherStation/blob/master/images/WeatherStation.jpg" width="800">
@@ -40,15 +38,8 @@ MQTT Topics to be published.
 | Part                               | Comment/Link                                        |
 | ---------------------------------- | --------------------------------------------------- |
 |  Wemos D1 mini                     | https://www.wemos.cc/en/latest/                     |   
-|  Anemometer Davis 6410             | https://www.davisinstruments.com/product/anemometer-for-vantage-pro2-vantage-pro/ |
+|  Omilex sheild-LCD16x2             | https://www.olimex.com/Products/Duino/Shields/SHIELD-LCD16x2/open-source-hardware |
 |  Tempsensor DB18B20                |                                                     |  
 |  Power Supply HLK-PM03             | http://www.hlktech.net/product_detail.php?ProId=59  |  
 
 
-## Features
- - Max, min, average wind speed
- - Wind direction
- - Temperature 
- 
-## References
-- http://cactus.io/hookups/weather/anemometer/davis/hookup-arduino-to-davis-anemometer-software 
