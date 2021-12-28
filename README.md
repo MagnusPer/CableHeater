@@ -4,6 +4,8 @@ Control system using external temperature sensor (DB18B20) with a configurable t
 
 Two versions available **basic** without any WiFi connection and one using **MQTT** topics to publish status. 
 
+<img src="https://github.com/MagnusPer/HeatCable/blob/main/images/LCDdisplay.JPG" width="400">
+
 
 ## Installation
 Needed Arduino Libraries to be included in [IDE](https://www.arduino.cc/en/Main/Software). Install them either from GitHub repository directly or within the IDE application itself **Sketch > Import Library** 
