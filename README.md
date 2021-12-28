@@ -30,7 +30,7 @@ MQTT Topics to be published.
 
 
 ## Wiring
-<img src="https://github.com/MagnusPer/WeatherStation/blob/master/images/WeatherStation.jpg" width="800">
+<img src="https://github.com/MagnusPer/HeatCable/blob/master/images/HeatCable.jpg" width="800">
 
 
 
