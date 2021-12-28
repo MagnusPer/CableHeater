@@ -15,7 +15,7 @@ Needed Arduino Libraries to be included in [IDE](https://www.arduino.cc/en/Main/
 | Dallas Temperature                 |                                                     |   X     |   X    |   
 | Wire                               |                                                     |   X     |   X    |  
 | LCD16x2                            | https://www.olimex.com/Products/Duino/Shields/SHIELD-LCD16x2/open-source-hardware |   X     |   X    |  
-| Dallas Temperature                 |                                                     |         |        |  
+| Dallas Temperature                 |                                                     |   X     |   X    |  
 
 
 ## MQTT Topics
