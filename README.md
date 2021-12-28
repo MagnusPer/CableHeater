@@ -1,4 +1,4 @@
-# Heater Cable
+# HeatCable
 
 Heat Cable control system using external temperature sensor (DB18B20) and a confirable temperature treshold (SetTemp) when relay to heatcable shall be activated. LCD display (Omilex sheild-LCD16x2) to visualize external(OutTemp) and treshold(SetTemp) temperature with relay status.    
 
