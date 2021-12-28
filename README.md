@@ -1,14 +1,22 @@
-# WeatherStation
-An [Wemos D1 Mini](https://www.wemos.cc/en/latest/) based wind and temperature station reporting direction, max, min and average wind via MQTT topics
+# Cable Heater
+
+Heat Cable control system using external temperature sensor (DB18B20) and a predefined temperature treshold (SetTemp) when relay to heatcable shall be activated. LCD display (Omilex sheild-LCD16x2) to visualize external(OutTemp) and treshold(SetTemp) temperature with relay status.    
+
+Two version available **basic** and without any WiFi connection and one using **MQTT** topics for status 
+
 
 ## Installation
 Needed Arduino Libraries to be included in [IDE](https://www.arduino.cc/en/Main/Software). Install them either from GitHub repository directly or within the IDE application itself **Sketch > Import Library** 
 
-| Library                            | Link to GitHub                                      |
-| ---------------------------------- | --------------------------------------------------- |
-| PubSubClient                       |  https://github.com/knolleary/pubsubclient          |      
-| OneWire                            |                                                     |
-| Dallas Temperature                 |                                                     |                                                     
+| Library                            | Link to GitHub                                      |  Basic  |  MQTT  | 
+| ---------------------------------- | --------------------------------------------------- |---------|--------|
+| [PubSubClient]( https://github.com/knolleary/pubsubclient )                       |  https://github.com/knolleary/pubsubclient          |         |   X    |     
+| OneWire                            |                                                     |   X     |   X    |
+| Dallas Temperature                 |                                                     |   X     |   X    |   
+| Wire                               |                                                     |   X     |   X    |  
+| LCD16x2                            | https://www.olimex.com/Products/Duino/Shields/SHIELD-LCD16x2/open-source-hardware |   X     |   X    |  
+| Dallas Temperature                 |                                                     |         |        |  
+
 
 ## MQTT Topics
 MQTT Topics to be published. 
