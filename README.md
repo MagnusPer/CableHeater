@@ -1,8 +1,8 @@
 # HeatCable
 
-Control system using external temperature sensor (DB18B20) with a configurable temperature treshold (SetTemp) when relay to heatcable shall be activated. LCD display (Omilex sheild-LCD16x2) to visualize external(OutTemp) and treshold(SetTemp)including relay status. Pushbutton to increase or decrease the temperature treshold.     
+Control system using external temperature sensor (DB18B20) with a configurable temperature treshold (SetTemp) controlling heatcable relay. LCD display (Omilex sheild-LCD16x2) to visualize external(OutTemp) and treshold(SetTemp) with relay status. Pushbutton to increase or decrease the temperature treshold.     
 
-Two versions available **basic** without any WiFi connection and one using **MQTT** topics to publish status. 
+Two versions available **Basic** without any WiFi connection and one using WiFi and **MQTT** topics to publish status. 
 
 <img src="https://github.com/MagnusPer/HeatCable/blob/main/images/LCDdisplay.jpg" width="400">
 
